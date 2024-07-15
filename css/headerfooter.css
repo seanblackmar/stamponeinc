@@ -1,0 +1,60 @@
+/* HEADER */
+header {
+  background-color: #001233;
+  color: white;
+  padding: 0px 10%;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
+.imgLogo {
+  height: 35px;
+}
+
+.topnav {
+  color: white;
+}
+
+.active {
+  color: #f50;
+  text-decoration: none;
+  padding: 10px 25px;
+  margin-left: 10px;
+}
+
+header p {
+  margin-left: auto;
+}
+
+
+/* FOOTER */
+footer {
+  height: 200px;
+  background-color: #001233;
+  color: white;
+  padding: 0px 10%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+footer h1 {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+footer h2 {
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}

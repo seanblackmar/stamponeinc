@@ -1,18 +1,202 @@
+/* UNIVERSAL STYLES */
+
 html {
     box-sizing: border-box;
-   }
-   *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-   }
+}
 
 body {
     margin: 0px auto;
     padding: 0px;
     width: 100%;
     font-family: 'Inter', sans-serif;
-    background-color: #001233;
+    font-optical-sizing: auto;
+    /*background-color: #001233;*/
+    color: black;
 }
 
-img {
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+/* HOMEPAGE */
+.heroimage-section {
+    height: calc(90vh - 70px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/heroimage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.herotext-top {
+    height: 50%;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.herotext-top h1 {
+    font-size: 58px;
+    margin: 0px;
+}
+
+.herotext-top h2 {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.herotext-bottom {
+    display: flex;
+    height: 50%;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.herotext-bottom p {
+    font-size: 21px;
+    font-weight: 600;
+    text-align: left;
+    margin: 0px;
+    width: 50%;
+    max-width: 600px;
+}
+
+.section-header {
+    margin: 80px 0px;
+    text-align: center;
+    padding: 0px 10%;
+    font-size: 35px;
+}
+
+.contact-section {
+    display: flex;
+    padding: 0px 10%;
+    justify-content: center;
+    /*! background: blue; */
+}
+
+.contact-left {
+    max-width: 600px;
+    padding: 30px 30px 100px 30px;
+    width: 50%;
+}
+
+.contact-left h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.contact-left p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4d4d4d;
+    line-height: 30px;
+    margin: 12px 0px 30px 0px;
+}
+
+/* STYLES FOR FILLABLE CONTACT FORM */
+
+
+.form-input,
+.form-textarea {
+    padding: 0px 15px;
+    border: 1px solid #001233;
+    height: 45px;
     width: 100%;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    line-height: 20px;
+    margin: 0px 0px 11px 0px;
+    color: black;
+}
+
+
+.form-textarea:focus-visible,
+.form-input:focus-visible {
+    color: Black;
+    outline: 1px solid blue;
+}
+
+.form-textarea {
+    min-height: 150px;
+    max-width: 540px;
+}
+
+.form-submit {
+    width: 100%;
+    background-color: #001233;
+    color: #fff;
+    padding: 0px;
+    border-radius: 10px;
+    height: 45px;
+    border: 0px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    transition: all ease-in-out 0.1s;
+}
+
+.form-submit:hover {
+    background-color: #ff5500;
+    cursor: pointer;
+}
+
+/* STYLES FOR FILLABLE CONTACT FORM */
+
+
+.contact-right {
+    max-width: 600px;
+    padding: 30px 30px 100px 30px;
+    width: 50%;
+}
+
+.contact-right ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact-right li {
+    padding: 4px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    min-height: 30px;
+}
+
+.contact-icons {
+    width: 20px;
+}
+
+.contact-button {
+    color: black;
+    margin-left: 10px;
+}
+
+.contact-button:hover {
+    color: #f50;
+}
+
+.contact-button-fax {
+    color: black;
+    margin-left: 10px;
+    cursor: text;
+    text-decoration: none;
 }
