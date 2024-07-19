@@ -31,6 +31,10 @@ header {
   margin: 0px;
 }
 
+.active:hover {
+  color: orangered;
+}
+
 header p {
   margin: 0px 0px 0px auto;
 }
@@ -62,14 +66,38 @@ footer h2 {
   font-weight: 400;
 }
 
+
+/************ BREAKPOINTS ************/
+
+
 /* Small Laptops 1200px or less */
 @media only screen and (max-width: 1200px) {}
 
+
 /* Landscape Tablets 992px or less */
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+   header {
+    padding: 0px 5%;
+  }
+  
+}
 
 /* Portait Tablets 768px or less */
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .topnav {
+    margin: 20px;
+  }
+
+  header p {
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+  }
+
+}
 
 /* Phones 480px or less  */
 @media only screen and (max-width: 480px) {}
