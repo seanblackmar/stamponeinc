@@ -1,0 +1,368 @@
+/************************************************ HERO IMAGE SECTION ************************************************/
+.heroimage-section {
+    height: calc(90vh - 50px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/heroimage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.herotext-top {
+    height: 50%;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.herotext-top h1 {
+    font-size: 58px;
+    margin: 0px;
+}
+
+.herotext-top h2 {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.herotext-bottom {
+    display: flex;
+    height: 50%;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.herotext-bottom p {
+    font-size: 21px;
+    font-weight: 600;
+    text-align: left;
+    margin: 0px;
+    width: 50%;
+    max-width: 600px;
+}
+
+.section-header {
+    margin: 80px 0px;
+    text-align: center;
+    padding: 0px 10%;
+    font-size: 35px;
+    font-weight: 800;
+    color: #001233;
+}
+
+
+/************************************************ PRODUCTS AND SERVICES SECTION ************************************************/
+.products-services-section {
+    margin: 0px auto;
+    padding: 0px 10%;
+}
+
+.products-services-row {
+    display: flex;
+    margin: auto;
+    padding: 0px 0px 30px 0px;
+    max-width: 1200px;
+}
+
+.products-services-left {
+    width: 50%;
+    padding: 0px 30px 0px 0px;
+    height: 300px;
+}
+
+.products-services-left img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.products-services-right {
+    width: 50%;
+    padding: 0px 0px 0px 30px;
+}
+
+.products-services-right h1 {
+    font-weight: 800;
+    font-size: 32px;
+    margin: 0px;
+    color: #001233;
+}
+
+.products-services-right p {
+    margin: 0px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 10px 0px 30px 0px;
+}
+
+
+/************************************************ CONTACT SECTION ************************************************/
+.contact-section {
+    display: flex;
+    padding: 0px 10% 100px 10%;
+    justify-content: center;
+}
+
+.contact-left {
+    max-width: 600px;
+    width: 50%;
+    padding: 0px 30px 0px 0px;
+}
+
+.contact-left h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.contact-left p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4d4d4d;
+    line-height: 30px;
+    margin: 12px 0px 30px 0px;
+}
+
+/* STYLES FOR FILLABLE CONTACT FORM */
+.form-input,
+.form-textarea {
+    padding: 0px 15px;
+    border: 1px solid #001233;
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    line-height: 20px;
+    margin: 0px 0px 11px 0px;
+    color: black;
+}
+
+.form-textarea:focus-visible,
+.form-input:focus-visible {
+    color: Black;
+    outline: 1px solid blue;
+}
+
+.form-textarea {
+    min-height: 150px;
+    /*! max-width: 570px; */
+}
+
+.form-submit {
+    width: 100%;
+    background-color: #001233;
+    color: #fff;
+    padding: 0px;
+    border-radius: 10px;
+    height: 45px;
+    border: 0px;
+    font-family: "Inter", sans-serif;
+    transition: all ease-in-out 0.1s;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-submit:hover {
+    background-color: #FF5F0F;
+    cursor: pointer;
+}
+
+/* END STYLES FOR FILLABLE CONTACT FORM */
+
+.contact-right {
+    max-width: 600px;
+    padding: 0px 0px 0px 30px;
+    width: 50%;
+}
+
+.contact-info {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact-info li {
+    padding: 4px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    min-height: 30px;
+}
+
+.contact-icons {
+    width: 20px;
+}
+
+.contact-button {
+    color: black;
+    margin-left: 10px;
+}
+
+.contact-button:hover,
+.contact-button-mobile:hover {
+    color: #FF5F0F;
+}
+
+.contact-info-mobile,
+.contact-info-mobile li,
+.contact-icons-mobile,
+.contact-button-mobile,
+.contact-button-fax-mobile {
+    display: none;
+}
+
+
+/************************************************ BREAKPOINTS ************************************************/
+
+/* Small Laptops 1200px or less */
+@media only screen and (max-width: 1200px) {}
+
+/* Landscape Tablets 992px or less */
+@media only screen and (max-width: 992px) {
+    .heroimage-section {
+        padding: 100px 5%;
+        height: calc(90vh - 60px);
+    }
+
+    .products-services-section {
+        padding: 0px 5%;
+    }
+
+    .products-services-left {
+        padding: 0px 15px 0px 0px;
+    }
+
+    .products-services-right {
+        padding: 0px 0px 0px 15px;
+    }
+
+    .contact-section {
+        padding: 0px 5% 100px 5%;
+    }
+
+    .contact-left {
+        padding: 0px 15px 0px 0px;
+    }
+
+    .contact-right {
+        padding: 0px 0px 0px 15px;
+    }
+}
+
+/* Portait Tablets 768px or less */
+@media only screen and (max-width: 768px) {
+
+    .herotext-bottom p {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .products-services-row {
+        flex-direction: column;
+        max-width: 600px;
+        padding: 0px 0px 80px 0px;
+    }
+
+    .products-services-left {
+        width: auto;
+        padding: 0px;
+        height: 250px;
+    }
+
+    .products-services-right {
+        width: auto;
+        padding: 0px;
+    }
+
+    .products-services-right h1 {
+
+        padding: 20px 0px 10px 0px;
+    }
+
+    .products-services-left img {
+        height: 250px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-left {
+        width: 100%;
+        padding: 0px 30px 30px 30px;
+        margin: 0px auto;
+    }
+
+    .contact-right {
+        width: 100%;
+        max-width: none;
+        padding: 0px;
+    }
+
+    .contact-info {
+        display: none;
+    }
+
+    .contact-info-mobile {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .contact-info-mobile li {
+        padding: 4px 0px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        min-height: 30px;
+    }
+
+    .contact-icons-mobile {
+        width: 20px;
+        display: block;
+    }
+
+    .contact-button-mobile {
+        color: black;
+        margin-left: 10px;
+        display: block;
+    }
+
+    .contact-button-fax-mobile {
+        color: black;
+        margin-left: 10px;
+        cursor: text;
+        text-decoration: none;
+        display: block;
+    }
+
+    .contact-left p {
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+/* Phones 480px or less  */
+@media only screen and (max-width: 480px) {
+
+    .contact-left,
+    .contact-right {
+        padding: 0px;
+    }
+
+    .products-services-left img,
+    .products-services-left {
+        height: 200px;
+    }
+}
