@@ -203,19 +203,22 @@
 
 .two-card-container {
     display: flex;
+    margin: 30px 0px 50px 0px;
 }
 
 .main-card-small-left {
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 40px 40px 30px 0px;
+    margin: 0px 40px 0px 0px;
 }
 
-.main-card-small-right {
+.main-card-small-right,
+.main-card-small-right-vertical,
+.main-card-small-right-empty {
     display: flex;
     flex-direction: column;
-    margin: 40px 0px 30px 40px;
+    margin: 0px 0px 0px 40px;
     width: 50%;
 }
 
@@ -228,7 +231,7 @@
 }
 
 .main-card-large {
-    margin: 30px 0px 30px 0px;
+    margin: 30px 0px 50px 0px;
     display: flex;
     flex-direction: column;
 }
@@ -241,13 +244,13 @@
 }
 
 .card-title {
-    margin: 13px 0px 0px 0px;
+    margin: 8px 0px 0px 0px;
     font-size: 26px;
     font-weight: 600;
 }
 
 .card-description {
-    margin: 10px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
     font-size: 17px;
     font-weight: 500;
     color: #333;
@@ -286,11 +289,13 @@
     }
 
     .main-card-small-left {
-        margin: 40px 25px 30px 0px;
+        margin: 0px 25px 0px 0px;
     }
 
-    .main-card-small-right {
-        margin: 40px 0px 30px 25px;
+    .main-card-small-right,
+    .main-card-small-right-vertical,
+    .main-card-small-right-empty {
+        margin: 0px 0px 0px 25px;
     }
 
     .sidenav-container-main {
@@ -314,12 +319,19 @@
     }
 
     .main-card-small-left {
-        margin: 40px 10px 30px 0px;
+        margin: 0px 10px 0px 0px;
     }
 
     .main-card-small-right {
-        margin: 40px 0px 30px 10px;
+        margin: 0px 0px 0px 10px;
     }
+
+    .main-card-small-right,
+    .main-card-small-right-vertical,
+    .main-card-small-right-empty {
+        margin: 0px 0px 0px 10px;
+    }
+
 
     .sidenav-container-main {
         width: 400px;
@@ -342,12 +354,17 @@
     }
 
     .main-card-small-left {
-        margin: 40px 0px 30px 0px;
+        margin: 0px 0px 0px 0px;
         width: 100%
     }
 
     .main-card-small-right {
-        margin: 40px 0px 30px 0px;
+        margin: 50px 0px 0px 0px;
+        width: 100%
+    }
+
+    .main-card-small-right-vertical {
+        margin: 8px 0px 0px 0px;
         width: 100%
     }
 
@@ -411,24 +428,9 @@
         width: 100%;
     }
 
-    .main-card-small-left {
-        margin: 25px 0px 20px 0px;
-    }
-
-    .main-card-small-right {
-        margin: 25px 0px 20px 0px;
-    }
-
-    .main-card-small img {
-        height: 200px
-    }
-
     .main-card-large img {
-        height: 200px
-    }
-
-    .card-title {
-        margin: 7px 0px 5px 0px;
+        max-height: 200px;
+        min-height: 150px;
     }
 
     .main-img {
