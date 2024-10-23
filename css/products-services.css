@@ -373,10 +373,13 @@
         margin-right: 25px;
     }
 
-    .sidenav-button {
+    .sidenav-button,
+    .sidenav-button-active
+    {
         font-size: 15px;
         padding: 9px 15px;
     }
+    
 
     .cards-container {
         width: calc(100% - 200px);
@@ -415,7 +418,8 @@
         margin: 0px 0px 40px 0px;
     }
 
-    .sidenav-button {
+    .sidenav-button,
+    .sidenav-button-active {
         font-size: 18px;
         padding: 11px 15px;
     }

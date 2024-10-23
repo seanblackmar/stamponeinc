@@ -43,3 +43,12 @@ h3 {
 .learn-more-button:hover {
     background-color: #FF5F0F;
 }
+
+.table-button {
+    text-decoration: none;
+    color: #1155cc;
+}
+
+.table-button:hover {
+    text-decoration: underline;
+}

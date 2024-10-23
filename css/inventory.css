@@ -1,0 +1,187 @@
+.table-wrapper {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.inventory-title-main {
+    font-size: 40px;
+    padding-bottom: 15px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.tab-switcher-mobile {
+    display: none;
+    justify-content: center;
+    border-bottom: 1px solid #d6d9de;
+    margin: 20px 0px;
+}
+
+.tab-switcher-mobile ul {
+    display: flex;
+    padding: 0px;
+    margin: 0px auto 0px 10%;
+    flex-direction: column;
+    width: 80%;
+}
+
+.tab-switcher-mobile li {
+    list-style: none;
+    margin: 0px 0px 5px 0px;
+    border-bottom: 3px solid transparent;
+    transition: all ease-in-out 0.1s;
+}
+
+.tab-switcher-mobile li:hover {
+    border-bottom: 3px solid #001233;
+}
+
+.tab-switcher-button-mobile {
+    color: #001233;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 10px 10px 1px;
+    display: flex;
+}
+
+.tab-switcher-tworow {
+    display: none;
+}
+
+.tab-switcher-button-tworow {
+    display: block;
+}
+
+.ebay-store-wrapper {
+    display: flex;
+}
+
+.ebay-store-left {
+    width: 50%;
+    padding: 0px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ebay-store-right {
+    width: 50%;
+    padding: 0px 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ebay-store-wrapper img {
+    padding: 20px 0px 0px 0px;
+    width: 100%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************ BREAKPOINTS ************************************************/
+
+
+
+
+/* Small Laptops 1200px or less */
+@media only screen and (max-width: 1200px) {
+    .ebay-store-left {
+        padding: 0px 15px 0px 0px;
+    }
+
+    .ebay-store-right {
+        padding: 0px 0px 0px 15px;
+    }
+}
+
+
+/* Landscape Tablets 992px or less */
+@media only screen and (max-width: 992px) {
+    .tab-switcher-button-tworow {
+        display: none;
+    }
+
+    .tab-switcher-tworow {
+        display: block;
+    }
+
+    .table-wrapper {
+        width: 90%;
+    }
+
+
+}
+
+
+/* Portait Tablets 768px or less */
+@media only screen and (max-width: 768px) {
+    .table-wrapper {
+        width: 95%;
+    }
+
+    .inventory-title-main {
+        text-align: center;
+    }
+
+    .ebay-store-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ebay-store-left {
+        padding: 0px;
+    }
+
+    .ebay-store-right {
+        padding: 0px;
+    }
+
+    .ebay-store-left,
+    .ebay-store-right {
+        width: 100%;
+    }
+
+    .ebay-store-wrapper img {
+        padding: 20px 0px 20px 0px;
+        width: 100%
+    }
+}
+
+/* Phones 480px or less  */
+@media only screen and (max-width: 480px) {
+
+    .tab-switcher,
+    .tab-switcher-tworow {
+        display: none;
+    }
+
+    .tab-switcher-mobile {
+        display: flex;
+    }
+
+    .table-wrapper {
+        width: 100%;
+    }
+}
