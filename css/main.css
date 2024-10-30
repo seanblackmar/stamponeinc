@@ -173,7 +173,7 @@
 
 .inventory-picture-top {
     height: 50%;
-    background-image: url(../images/products-services/tool-steel-stock-card.png);
+    background-image: url(../images/inventory_home_3.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -181,7 +181,7 @@
 
 .inventory-picture-bottom {
     height: 50%;
-    background-image: url(../images/products-services/press-brake-tooling-card.jpg);
+    background-image: url(../images/inventory_home_2.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -189,7 +189,7 @@
 
 .inventory-pictures-right {
     width: 50%;
-    background-image: url(../images/inventory-right.jpg);
+    background-image: url(../images/inventory_home_1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
