@@ -79,13 +79,146 @@
 }
 
 
+/************************************************ INDIVIDUAL LISTINGS ************************************************/
 
 
+.back1page {
+    display: block;
+    height: 90px;
+    align-content: center;
+    padding: 0px 10%;
+    margin: 0px auto;
+}
+
+.back1page-container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.back1page svg {
+    width: 12px;
+    fill: #1155cc;
+    margin-right: 5px;
+}
+
+.back1page a {
+    display: inline-flex;
+}
+.back1page a:visited {
+    color: #1155cc;
+}
+
+.inventory-main-content {
+    padding: 0px 10% 80px 10%;
+    margin: 0px auto;
+}
+
+.inventory-content-container {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+}
+
+/* Style the tab */
+.tab-container {
+    width: 50%;
+    display: flex;
+    padding-right: 30px;
+    min-height: 650px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    /*! float: left; */
+
+    width: 64px;
+    margin-right: 20px;
+}
+
+.tab img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #575757;
+}
+
+/* Style the tab content */
+.tabcontent {
+    /*! float: left; */
+    margin-top: 5px;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.tabcontent img {
+    max-height: 650px;
+    border-radius: 10px;
+    width: 100%;
+    object-fit: contain;
+}
 
 
+.inventory-item-info {
+    width: 50%;
+    padding-left: 30px;
+}
 
+.inventory-item-info h1 {padding-bottom: 20px;}
 
+.inventory-item-info h2 {font-size: 17px;line-height: 24px;font-weight: 700;font-family: 'Inter', sans-serif;padding-bottom: 5px;}
 
+.inventory-item-info p {font-size: 17px;line-height: 24px;font-weight: 500;padding-bottom: 20px;}
+
+.inventory-bullet-list {padding-left: 20px;font-size: 15px;line-height: 21px;font-weight: 400;padding-bottom: 20px;}
+
+.inventory-bullet-list li {}
+
+.inventory-bullet-list li::marker {
+    color: red;
+}
+
+.inventory-dotted-list {padding-left: 0px;font-size: 15px;line-height: 21px;font-weight: 400;padding-bottom: 30px;width: 80%;}
+
+.inventory-dotted-list li {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: baseline;
+}
+
+.inventory-dotted-list li:before {
+    border-bottom: 2px dotted #333;
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.inventory-dotted-list span {
+    background: #fff;
+    padding: 0px .5em;
+}
 
 
 

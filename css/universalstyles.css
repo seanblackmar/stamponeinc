@@ -52,3 +52,7 @@ h3 {
 .table-button:hover {
     text-decoration: underline;
 }
+
+.table-button:visited {
+    color: #551A8B;
+}
