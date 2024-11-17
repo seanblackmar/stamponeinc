@@ -93,6 +93,7 @@
 .back1page-container {
     max-width: 1300px;
     margin: auto;
+    padding-top: 5px;
 }
 
 .back1page svg {
@@ -104,6 +105,7 @@
 .back1page a {
     display: inline-flex;
 }
+
 .back1page a:visited {
     color: #1155cc;
 }
@@ -121,7 +123,7 @@
 
 /* Style the tab */
 .tab-container {
-    width: 50%;
+    width: 55%;
     display: flex;
     padding-right: 30px;
     min-height: 650px;
@@ -166,28 +168,49 @@
     width: 100%;
     background-color: #f2f2f2;
     border-radius: 10px;
+    max-height: 630px;
 }
 
 .tabcontent img {
-    max-height: 650px;
+    max-height: 630px;
     border-radius: 10px;
     width: 100%;
     object-fit: contain;
+    object-position: center;
 }
 
 
 .inventory-item-info {
-    width: 50%;
+    width: 45%;
     padding-left: 30px;
 }
 
-.inventory-item-info h1 {padding-bottom: 20px;}
+.inventory-item-info h1 {
+    padding-bottom: 20px;
+}
 
-.inventory-item-info h2 {font-size: 17px;line-height: 24px;font-weight: 700;font-family: 'Inter', sans-serif;padding-bottom: 5px;}
+.inventory-item-info h2 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 2px;
+}
 
-.inventory-item-info p {font-size: 17px;line-height: 24px;font-weight: 500;padding-bottom: 20px;}
+.inventory-item-info p {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
 
-.inventory-bullet-list {padding-left: 20px;font-size: 15px;line-height: 21px;font-weight: 400;padding-bottom: 20px;}
+.inventory-bullet-list {
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
 
 .inventory-bullet-list li {}
 
@@ -195,7 +218,16 @@
     color: red;
 }
 
-.inventory-dotted-list {padding-left: 0px;font-size: 15px;line-height: 21px;font-weight: 400;padding-bottom: 30px;width: 80%;}
+.inventory-dotted-list {
+    padding-left: 0px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    width: 100%;
+    right: .5em;
+    position: relative;
+}
 
 .inventory-dotted-list li {
     display: flex;
@@ -222,13 +254,95 @@
 
 
 
+/* STYLES FOR FILLABLE CONTACT FORM */
+.form-input,
+.form-textarea {
+    padding: 0px 15px;
+    border: 1px solid #001233;
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    line-height: 20px;
+    margin: 0px 0px 11px 0px;
+    color: black;
+    resize: none;
+}
+
+.form-textarea:focus-visible,
+.form-input:focus-visible {
+    color: Black;
+    outline: 1px solid blue;
+}
+
+.form-textarea {
+    min-height: 150px;
+    /*! max-width: 570px; */
+}
+
+.form-submit {
+    width: 100%;
+    background-color: #001233;
+    color: #fff;
+    padding: 0px;
+    border-radius: 10px;
+    height: 45px;
+    border: 0px;
+    font-family: "Inter", sans-serif;
+    transition: all ease-in-out 0.1s;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-submit:hover {
+    background-color: #FF5F0F;
+    cursor: pointer;
+}
+
+.form-input-inventory-placeholder:focus-visible {
+    color: Black;
+    outline: 1px solid gray;
+}
+
+/* END STYLES FOR FILLABLE CONTACT FORM */
 
 
 
 
+/*  STYLES FOR ACCORDIAN DROPDOWN */
+ /* Style the buttons that are used to open and close the accordion panel */
+ .accordion {
+    background-color: #001233;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    padding: 8px 48px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all ease-in-out 0.1s;
+    font-family: 'Inter', sans-serif;
+    border-radius: 3px;
+    margin-bottom: 11px;
+    border: 2px #001233 solid;
+  }
+  
+  .active, .accordion:hover {
+    background-color: white;
+    color: #001233;
+    border: 2px #001233 solid;
+  }
+  
+  .panel {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 1px;
+  }
 
-
-
+  /* END STYLES FOR ACCORDIAN DROPDOWN */
 
 
 
@@ -246,6 +360,19 @@
     .ebay-store-right {
         padding: 0px 0px 0px 15px;
     }
+    .inventory-item-info {
+    padding-left: 15px;
+        width: 50%;
+}
+    .tab-container {
+  padding-right: 15px;
+        width: 50%;
+}
+    .inventory-dotted-list {
+    font-size: 15px;
+}
+    
+    
 }
 
 
@@ -262,6 +389,29 @@
     .table-wrapper {
         width: 90%;
     }
+    .back1page {
+    padding: 0px 5%;
+}
+    .inventory-main-content {
+    padding: 0px 5% 80px 5%;
+    margin: 0px auto;
+}
+        .inventory-item-info {
+    padding-left: 10px;
+}
+    .tab-container {
+  padding-right: 10px;
+}
+    .tabcontent {
+    max-height: 540px;
+}
+
+.tabcontent img {
+    max-height: 540px;
+}
+    .inventory-dotted-list {
+    font-size: 14px;
+}
 
 
 }
@@ -300,6 +450,26 @@
         padding: 20px 0px 20px 0px;
         width: 100%
     }
+    .inventory-content-container {
+  flex-direction: column;
+}
+    .tab-container {
+  width: 100%;
+  display: flex;
+  padding-right: 0px;
+  min-height: 540px;
+}
+    .inventory-item-info {
+  width: 100%;
+  padding-top: 30px;
+}
+    .inventory-dotted-list {
+    font-size: 15px;
+}
+    
+    
+    
+    
 }
 
 /* Phones 480px or less  */
@@ -317,4 +487,23 @@
     .table-wrapper {
         width: 100%;
     }
+    .back1page {
+  
+  height: 70px;
+
+  position: relative;
+  bottom: 10px;
+}
+    
+       .tab-container {
+  min-height: auto;
+} 
+    .inventory-dotted-list {
+    font-size: 12px;
+}
+    
+    
+    
+    
+    
 }
