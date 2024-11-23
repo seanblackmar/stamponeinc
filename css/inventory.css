@@ -142,6 +142,7 @@
     width: 60px;
     height: 60px;
     border-radius: 5px;
+    object-fit: cover; 
 }
 
 /* Style the buttons inside the tab */
