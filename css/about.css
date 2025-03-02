@@ -1,0 +1,175 @@
+/************************************************ ABOUT US SECTION ************************************************/
+.about-main-content {
+    padding: 80px 10%;
+    margin: 0px auto;
+}
+
+.about-container {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+}
+
+.about-description {
+    width: 48%;
+    margin-right: 2%;
+}
+
+.about-description h1 {
+    font-size: 40px;
+    padding-bottom: 27px;
+    font-weight: 700;
+}
+
+.about-description p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 40px;
+}
+
+.about-people {
+    width: 48%;
+    margin-left: 2%;
+}
+
+.about-people h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.people-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.people-container-row {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.people-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    width: 50%;
+}
+
+.people-card img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    height: 180px;
+}
+
+.people-card h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 8px 0px 3px 0px;
+}
+
+.people-card h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #34393F;
+}
+
+.people-card h4 {
+    display: none;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #34393F;
+}
+
+.people-2col {
+    display: none;
+}
+
+.people-3col {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************ BREAKPOINTS ************************************************/
+
+/* Small Laptops 1200px or less */
+@media only screen and (max-width: 1200px) {
+    .about-main-content {
+        padding: 80px 5%;
+    }
+}
+
+
+/* Landscape Tablets 992px or less */
+@media only screen and (max-width: 992px) {
+    .about-main-content {
+        padding: 60px 5%;
+        margin: 0px auto;
+    }
+
+    .people-2col {
+        display: flex;
+    }
+
+    .people-3col {
+        display: none;
+    }
+}
+
+
+/* Portait Tablets 768px or less */
+@media only screen and (max-width: 768px) {
+    .about-description {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 80px;
+    }
+
+    .about-people {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .people-2col {
+        display: none;
+    }
+
+    .people-3col {
+        display: flex;
+    }
+
+    .about-description p {
+        padding-bottom: 30px;
+    }
+}
+
+
+/* Phones 480px or less  */
+@media only screen and (max-width: 480px) {
+    .people-2col {
+        display: flex;
+    }
+
+    .people-3col {
+        display: none;
+    }
+}

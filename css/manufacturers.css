@@ -1,0 +1,280 @@
+/************************************************ MANUFACTURERS WE REPRESENT SECTION ************************************************/
+.manufacturers-main-content {
+    padding: 0px 10% 50px 10%;
+    background-color: #F2F2F2;
+}
+
+.manufacturers-view-icons {
+    height: 30px;
+    width: 30px;
+}
+
+.tablink {
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 0px;
+    width: 44px;
+    height: 44px;
+    margin: 0px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+.tablink:hover {
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.view-container {
+    max-width: 1300px;
+    margin: 0px auto;
+    padding: 55px 0px 40px 15px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #222;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+.tabcontent {
+    display: none;
+    height: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.manufacturers-container-4col {
+    display: block;
+}
+
+.manufacturers-container-3col {
+    display: none;
+}
+
+.manufacturers-container-2col {
+    display: none;
+}
+
+.manufacturers-row {
+    display: flex;
+}
+
+.card-container {
+    background-color: #fff;
+    margin: 15px;
+    width: calc(25% - 30px);
+    border-radius: 10px;
+}
+
+.card-container:hover {
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .1);
+}
+
+.card-container .visit-website-reveal {
+    opacity: 0;
+    bottom: -5px;
+}
+
+.card-container:hover .visit-website-reveal {
+    opacity: 1;
+    bottom: 0px;
+}
+
+.card-button {
+    display: block;
+    text-decoration: none;
+    height: 100%;
+}
+
+.card-button:visited {
+    color: #1155cc;
+}
+
+.manufacturers-card {
+    padding: 30px 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.manufacturers-card img {
+    width: 100%;
+    padding: 0px 10px;
+    object-fit: contain; 
+    height: 60px;
+}
+
+.manufacturers-card p {
+    color: #282828;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.visit-website-reveal {
+    position: relative;
+    margin-top: auto;
+    transition: all .1s ease-in-out;
+    padding-top: 10px;
+    display: flex;
+    margin-right: auto;
+}
+
+.visit-website-reveal:hover {
+     /*! text-decoration: underline; */
+}
+
+.visit-website-reveal svg {
+    width: 10px;
+    fill: #06c;
+    margin-left: 4px;
+}
+
+.manufacturers-list-img {
+    width: 100%;
+    object-fit: contain;
+    margin: 10px 0px;
+    width: 200px;
+    height: 50px;
+}
+
+.company-table {
+    font-weight: 600;
+}
+
+#List {
+    padding: 0px 10px;
+}
+
+
+
+/************************************************ BREAKPOINTS ************************************************/
+
+/* Small Laptops 1200px or less */
+@media only screen and (max-width: 1200px) {
+    .manufacturers-main-content {
+        padding: 0px 5% 50px 5%;
+    }
+    .card-container {
+        margin: 10px;
+        width: calc(25% - 20px);
+    }
+    .view-container {
+        padding: 55px 0px 40px 10px;
+    }
+}
+
+
+/* Landscape Tablets 992px or less */
+@media only screen and (max-width: 992px) {
+    .card-container {
+        width: calc(33.33% - 20px);
+    }
+
+    .manufacturers-container-4col {
+        display: none;
+    }
+
+    .manufacturers-container-3col {
+        display: block;
+    }
+    .manufacturers-list-img {
+        width: 100px;
+        height: 25px;
+    }
+    .card-container .visit-website-reveal {
+    opacity: 1;
+    }
+    .card-container:hover .visit-website-reveal {
+    opacity: 1;
+    bottom: -5px;
+}
+
+}
+
+
+/* Portait Tablets 768px or less */
+@media only screen and (max-width: 768px) {
+    .card-container {
+        width: calc(50% - 20px);
+    }
+    
+
+    .manufacturers-container-3col {
+        display: none;
+    }
+
+    .manufacturers-container-2col {
+        display: block;
+    }
+    
+    
+}
+
+
+/* Phones 480px or less  */
+@media only screen and (max-width: 480px) {
+    .card-container {
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+    .manufacturers-list-img {
+        width: 70px;
+        height: 20px;
+    }
+    .description-table{
+        font-size: 13px;
+    }
+    .company-table {
+    font-size: 15px;
+}
+    .manufacturers-card {
+
+    padding: 20px 15px;
+}
+
+.manufacturers-card p {
+
+    padding-top: 10px;
+}
+    .view-container {
+        padding: 55px 0px 40px 5px;
+    }
+}

@@ -16,13 +16,17 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- WEBSITE TITLE AND DESCRIPTION -->
-    <title>Stamp One, Inc. | About </title>
+    <title>Stamp One, Inc. | About</title>
     <meta name="description"
         content="Since 1989, Stamp One has been a global complete line distributor dedicated to serving the metal stamping and injection molding industries." />
-    <meta name="keywords" content="Stamp, One, inc, cranston, rhode island, ri" />
+    <meta name="keywords" content="Stamp, One, inc, cranston, rhode island, ri, contact" />
+
 
     <!-- STYLESHEETS -->
-    <link href="css/redirectpage.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/about.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/headerfooter.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/universalstyles.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="https:////cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" rel="stylesheet">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,14 +39,236 @@
 
 <body>
 
-    <div class="redirect-wrapper">
+    <header>
+        <nav>
+            <div class="wrapper">
+                <a class="imgLogo" href="index.html">
+                    <img class="imgLogo" src="images/logo.webp" alt="" />
+                </a>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"> <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path style="fill: white;"
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg></label>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a style="cursor: default;" class="desktop-item">Products & Services<i
+                                class="arrow down"></i></a>
+                        <input type="checkbox" id="showDrop">
+                        <label for="showDrop" class="mobile-item">Products &
+                            Services<i class="arrow down"></i></label>
+                        <ul class="drop-menu">
+                            <li><a href="toolroom-supplies.html">Toolroom Supplies</a></li>
+                            <li><a href="pressroom-equipment.html">Pressroom Equipment</a></li>
+                            <li><a href="mold-tooling.html">Mold Tooling</a></li>
+                        </ul>
+                    </li>
 
-        <img src="images/businesscard.webp">
-        <h1>This website is currently being updated.</h1>
-        <h3>The page you are trying to reach is unavailable. Please see our homepage for more information.</h3>
-        <a href="https://www.stamponeinc.com/">Go to Homepage!</a>
+                    <li>
+                        <a style="cursor: default;" class="desktop-item">Inventory<i class="arrow down"></i></a>
+                        <input type="checkbox" id="showDrop2">
+                        <label for="showDrop2" class="mobile-item">Inventory<i class="arrow down"></i></label>
+                        <ul class="drop-menu">
+                            <li> <a href="inventory/presses.html">Presses</a></li>
+                            <li> <a href="inventory/reels.html">Reels</a></li>
+                            <li> <a href="inventory/pallet-decoilers.html">Pallet Decoilers</a></li>
+                            <li> <a href="inventory/straighteners.html">Straighteners</a></li>
+                            <li> <a href="inventory/feeds.html">Feeds</a></li>
+                            <li> <a href="inventory/misc.html">Misc.</a></li>
+                            <li> <a href="inventory/ebay-store.html">eBay Store</a></li>
+                            <li> <a href="inventory/picture-library.html">Picture Library</a></li>
+                        </ul>
+                    </li>
 
-    </div>
+                    <li><a href="manufacturers-we-represent.html">Manufacturers We Represent</a></li>
+                    <li><a style="border-bottom: 2px solid #FF5F0F;" href="about.html">About</a></li>
+
+                    <li class="mobile-contact">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="nav-contact-button">Contact</a>
+                <label for="menu-btn" class="btn menu-btn"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path style="fill: white;"
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg></label>
+            </div>
+        </nav>
+    </header>
+
+    <section
+        style="background-image: linear-gradient(rgba(0, 18, 51, .5), rgba(0, 18, 51, .5)), url(images/heroimage.jpg);"
+        class="hero-image">
+        <div class="hero-container">
+            <h1>ABOUT US</h1>
+            <!--<h2>Follow up text</h2>-->
+        </div>
+    </section>
+
+    <section class="about-main-content">
+
+        <div class="about-container">
+            <div class="about-description">
+                <h1>Stamp One, Inc.</h1>
+                <p>Established in 1989, Stamp One is a complete line distributor dedicated to
+                    serving the metal stamping as well as the injection molding industries. We represent only the
+                    product lines we feel are the leaders in the industry. Our primary goal is to provide the most
+                    reliable and cost effective equipment and tooling to our customers. Whether your need is for a
+                    complete press line or simply replacing tooling components in your die. Stamp One is here to help.
+                    <br><br>
+                    We also offer press repairs, complete rebuilding and press control upgrades. Other services include,
+                    press inspection surveys, stop time measuring, press tonnage calibrations and preventive maintenance
+                    programs. We can supply replacement parts for all major manufacturers of machinery.
+                    <br><br>
+                    We appreciate you taking the time to visit this site. Please feel free to contact us for all your
+                    stamping, fabrication, and molding requirements.
+                </p>
+                <a class="learn-more-button" href="contact.html">Contact</a>
+            </div>
+
+            <div class="about-people">
+                <h1>Our Staff</h1>
+                <div class="people-container people-3col">
+    
+                    <div class="people-container-row">
+                        <div class="people-card">
+                            <img src="images/people-cards/john.jpg" loading="lazy" alt="">
+                            <h2>John Blackmar</h2>
+                            <h3>President</h3>
+                        </div>
+                        <div class="people-card">
+                            <img src="images/people-cards/ann.jpg" loading="lazy" alt="">
+                            <h2>Ann Blackmar</h2>
+                            <h3>Office Manager</h3>
+                        </div>
+                        <div class="people-card">
+                            <img src="images/people-cards/robert.jpg" loading="lazy" alt="">
+                            <h2>Robert Rivers</h2>
+                            <h3>Sales Manager</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="people-container-row">
+                        <div class="people-card">
+                            <img src="images/people-cards/scott.jpg" loading="lazy" alt="">
+                            <h2>Scott Blackmar</h2>
+                            <h3>Sales Representative</h3>
+                        </div>
+                        <div class="people-card">
+                            <img src="images/people-cards/jay.jpg" loading="lazy" alt="">
+                            <h2>Jay Maslen</h2>
+                            <h3>Service Technician</h3>
+                        </div>
+                        <div class="people-card">
+                            <img src="images/people-cards/sean.jpg" loading="lazy" alt="">
+                            <h2>Sean Blackmar</h2>
+                            <h3>Web Designer/Developer</h3>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="people-container people-2col">  
+                    <div class="people-container-row">
+                        <div class="people-card">
+                            <img src="images/people-cards/john.jpg" loading="lazy" alt="">
+                            <h2>John Blackmar</h2>
+                            <h3>President</h3>
+                        </div>
+                        <div class="people-card">
+                            <img src="images/people-cards/ann.jpg" loading="lazy" alt="">
+                            <h2>Ann Blackmar</h2>
+                            <h3>Office Manager</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="people-container-row">
+                        <div class="people-card">
+                            <img src="images/people-cards/robert.jpg" loading="lazy" alt="">
+                            <h2>Robert Rivers</h2>
+                            <h3>Sales Manager</h3>
+                        </div>
+                        <div class="people-card">
+                            <img src="images/people-cards/scott.jpg" loading="lazy" alt="">
+                            <h2>Scott Blackmar</h2>
+                            <h3>Sales Representative</h3>
+                        </div>
+                    </div>
+
+                    <div class="people-container-row">
+                        <div class="people-card">
+                            <img src="images/people-cards/jay.jpg" loading="lazy" alt="">
+                            <h2>Jay Maslen</h2>
+                            <h3>Service Technician</h3>
+                        </div>
+                        <div class="people-card">
+                            <img src="images/people-cards/sean.jpg" loading="lazy" alt="">
+                            <h2>Sean Blackmar</h2>
+                            <h3>Web Designer/Developer</h3>
+                        </div>
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="left-footer">
+            <a href="index.html">Home</a><br>
+            <a href="toolroom-supplies.html">Products & Services</a><br>
+            <a href="inventory/presses.html">Inventory</a><br>
+            <a href="manufacturers-we-represent.html">Manufacturers We Represent</a><br>
+            <a href="about.html">About</a>
+        </div>
+        <div class="middle-footer">
+            <h1>Need More Details?</h1>
+            <p>We are here to assist.<br>Contact us by phone, email or via our website form</p>
+            <a href="contact.html" class="learn-more-button-contact">Contact</a>
+        </div>
+        <div class="right-footer">
+            <img src="images/businesscard.webp" alt="" /><br>
+            <a class="info-buttons-footer" href="https://maps.app.goo.gl/CJNgLyTLJzNkMhJk8" target="_blank">600 Park
+                Avenue<br>Cranston, RI 02910</a><br>
+            <a class="info-buttons-footer" href="mailto: sales@stamponeinc.com">sales@stamponeinc.com</a><br>
+            <a class="info-buttons-footer" href="tel:14014611155">Tel: (401) 461-1155</a><br>
+            <a style="margin: 0px; color: white; text-decoration: none;" class="info-buttons-footer">Fax: (401)
+                461-1195</a>
+        </div>
+    </footer>
 
     <!--[if IE]><div style="width: 100%; position: fixed; z-index: 1000; bottom: 0; left: 0; background: lightgray;"><p>Outdated browser dectected. Please use a modern browser for a better browsing experience.</p><div onClick="parentNode.remove()">Close [X]</div></div><![endif]-->
 

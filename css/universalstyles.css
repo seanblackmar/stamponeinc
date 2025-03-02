@@ -1,4 +1,4 @@
-/************************************************ UNIVERSAL STYLES ************************************************/
+
 html {
     box-sizing: border-box;
     overflow-x: hidden;
@@ -26,6 +26,44 @@ h2,
 h3 {
     font-family: "Montserrat", sans-serif;
 }
+
+
+
+
+/************************************************ HERO STYLES ************************************************/
+.hero-image {
+    height: 275px;
+    background-image: linear-gradient(rgba(0, 18, 51, .5), rgba(0, 18, 51, .5)), url(../images/products-services-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 0px 10%;
+    margin: 0px auto;
+}
+
+.hero-container {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-image h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.hero-image h2 {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 3px 0px 10px 0px;
+}
+
 
 
 /************************************************ BUTTONS ************************************************/

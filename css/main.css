@@ -47,9 +47,9 @@
 }
 
 .section-header {
-    margin: 80px 0px;
+    margin: 0px 0px;
     text-align: center;
-    padding: 0px 10%;
+    padding: 80px 10%;
     font-size: 35px;
     font-weight: 800;
     color: #001233;
@@ -58,7 +58,7 @@
 
 /************************************************ PRODUCTS AND SERVICES SECTION ************************************************/
 .products-services-section {
-    margin: 80px auto 100px auto;
+    margin: 0px auto 100px auto;
     padding: 0px 10%;
 }
 
@@ -66,7 +66,7 @@
     display: flex;
     margin: auto;
     padding: 0px 0px 30px 0px;
-    max-width: 1200px;
+    max-width: 1300px;
 }
 
 .products-services-left {
@@ -97,7 +97,7 @@
 .products-services-right p {
     margin: 0px;
     font-size: 17px;
-    line-height: 24px;
+    line-height: 29px;
     font-weight: 500;
     padding: 10px 0px 30px 0px;
 }
@@ -126,7 +126,7 @@
     color: white;
     padding-bottom: 20px;
     font-size: 17px;
-    line-height: 24px;
+    line-height: 29px;
     font-weight: 500;
     max-width: 80%;
 }
@@ -196,13 +196,74 @@
 }
 
 .inventory-pictures-mobile {
-display: none;
+    display: none;
 }
 
 
 
+/************************************************ MANUFACTURERS WE REPRESENT SECTION ************************************************/
+.manufacturers-section {
+    margin: 150px auto 160px auto;
+    padding: 0px 10%;
+}
 
+.manufacturers-header {
+    font-size: 35px;
+    font-weight: 800;
+    color: #001233;
+    padding-bottom: 25px;
+    margin: 0px auto;
+    max-width: 1300px;
+}
 
+.manufacturers-left-right {
+    display: flex;
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
+.manufacturers-left {
+    width: 50%;
+}
+
+.manufacturers-left p {
+    margin: 0px;
+    font-size: 17px;
+    line-height: 34px;
+    font-weight: 500;
+    padding: 10px 0px 40px 0px;
+    width: 90%;
+}
+
+.manufacturers-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.manufacturers-row {
+    display: flex;
+}
+
+.manufacturers-row img {
+    width: 100%;
+    padding: 15px 0px 0px 40px;
+    object-fit: contain;
+    max-width: 170px;
+}
+
+.manufacturers-third-image {
+    display: block;
+}
+
+.show-mobile {
+    display: none;
+}
+
+.show-desktop {
+    display: inline;
+}
 
 
 
@@ -214,6 +275,7 @@ display: none;
     display: flex;
     padding: 0px 10% 100px 10%;
     justify-content: center;
+    background-color: #f2f2f2;
 }
 
 .contact-left {
@@ -330,7 +392,11 @@ display: none;
 /************************************************ BREAKPOINTS ************************************************/
 
 /* Small Laptops 1200px or less */
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {   
+    .manufacturers-third-image {
+        display: none;
+    }
+}
 
 /* Landscape Tablets 992px or less */
 @media only screen and (max-width: 992px) {
@@ -351,26 +417,55 @@ display: none;
         padding: 0px 0px 0px 15px;
     }
 
+
     .inventory-sidenav {
         width: 40%;
         padding: 100px 5% 100px 5%;
     }
-
     .inventory-pictures {
         width: 60%;
     }
-
     .inventory-description {
         max-width: 100%;
     }
-
     .inventory-links {
         width: 100%;
-
     }
 
 
 
+    .manufacturers-section {
+        padding: 0px 5%;  
+        margin: 100px auto 110px auto;  
+    }    
+    .manufacturers-left-right {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    
+    .manufacturers-left {
+        width: 100%;
+    }
+    
+    .manufacturers-left p {
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+    }
+    
+    .manufacturers-right {
+        width: 100%;
+    }
+    
+    .manufacturers-third-image {
+        display: block;
+    }
+    .show-mobile {
+        display: inline;
+    }
+    
+    .show-desktop {
+        display: none;
+    }
 
 
 
@@ -455,7 +550,9 @@ display: none;
 
 
 
-
+    .manufacturers-third-image {
+        display: none;
+    }
 
 
 
@@ -542,15 +639,25 @@ display: none;
         display: flex;
         height: 40vh;
     }
+
     .inventory-pictures {
         display: none;
     }
+
     .inventory-pictures-left {
-    display: flex;
-  }
+        display: flex;
+    }
+
     .inventory-pictures-right {
-    width: 50%;
-  }
+        width: 50%;
+    }
+
+    .manufacturers-header {
+        font-size: 30px;
+    }
+    .manufacturers-row img {
+    padding: 15px 0px 0px 25px;
+}
 
     .contact-left,
     .contact-right {
@@ -561,5 +668,5 @@ display: none;
         width: 100%;
     }
 
-    
+
 }
