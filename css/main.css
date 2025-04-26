@@ -247,10 +247,11 @@
 }
 
 .manufacturers-row img {
-    width: 100%;
-    padding: 15px 0px 0px 40px;
+    width: 25%;
+    padding: 15px 0px 0px 0px;
     object-fit: contain;
     max-width: 170px;
+    margin-left: 40px;
 }
 
 .manufacturers-third-image {
