@@ -68,20 +68,3 @@ function getDistance(touch1, touch2) {
   const dy = touch2.clientY - touch1.clientY;
   return Math.sqrt(dx * dx + dy * dy);
 }
-
-// --- Swipe down to close on mobile ---
-let startY = 0;
-
-lightboxImg.addEventListener('touchstart', (e) => {
-  if (e.touches.length === 1) {
-    startY = e.touches[0].clientY;
-  }
-}, { passive: true });
-
-lightboxImg.addEventListener('touchend', (e) => {
-  const endY = e.changedTouches[0].clientY;
-  if (startY && endY - startY > 100) { // Swipe down threshold
-    lightbox.style.display = 'none';
-    resetZoom();
-  }
-});
