@@ -183,11 +183,11 @@
                 </div>
 
                 <div id="image1" class="tabcontent" style="display: flex;">
-                    <img src="../images/507-image1.jpg" alt="" />
+                    <img src="../images/507-image1.jpg" alt="" class="thumbnail" />
                 </div>
 
                 <div id="image2" class="tabcontent" style="display: none;">
-                    <img src="../images/507-image2.jpg" alt="" />
+                    <img src="../images/507-image2.jpg" alt="" class="thumbnail"/>
                 </div>
 
             </div>
@@ -267,6 +267,13 @@
 
         </div>
     </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="closeBtn">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" src="">
+    </div>
+
+    <script src="../../js/openImage.js"></script>
 
     <script> // Function for the images
         function openImage(evt, imageNumber) {
