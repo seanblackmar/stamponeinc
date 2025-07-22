@@ -12,18 +12,26 @@ thumbnails.forEach(thumbnail => {
   });
 });
 
+
 lightbox.addEventListener('click', (e) => {
   if (e.target === lightbox || e.target === closeBtn) {
-    lightbox.classList.remove('show');
-    resetZoom();
+    closeLightbox();
   }
 });
+
+function closeLightbox() {
+  lightbox.classList.remove('show');
+
+  // Delay resetZoom until after fade-out (300ms match your CSS transition)
+  setTimeout(() => {
+    resetZoom();
+  }, 300);
+}
 
 // Escape key closes lightbox
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && lightbox.classList.contains('show')) {
-    lightbox.classList.remove('show');
-    resetZoom();
+    closeLightbox();
   }
 });
 
