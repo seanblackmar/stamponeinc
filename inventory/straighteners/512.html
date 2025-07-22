@@ -200,28 +200,28 @@
                 </div>
 
                 <div id="image1" class="tabcontent" style="display: flex;">
-                    <img src="../images/512-image1.jpg" alt="" />
+                    <img src="../images/512-image1.jpg" alt="" class="thumbnail"/>
                 </div>
                 <div id="image2" class="tabcontent" style="display: none;">
-                    <img src="../images/512-image2.jpg" alt="" />
+                    <img src="../images/512-image2.jpg" alt="" class="thumbnail"/>
                 </div>
                 <div id="image3" class="tabcontent" style="display: none;">
-                    <img src="../images/512-image3.jpg" alt="" />
+                    <img src="../images/512-image3.jpg" alt="" class="thumbnail"/>
                 </div>
                 <div id="image4" class="tabcontent" style="display: none;">
-                    <img src="../images/512-image4.jpg" alt="" />
+                    <img src="../images/512-image4.jpg" alt="" class="thumbnail"/>
                 </div>
                 <div id="image5" class="tabcontent" style="display: none;">
-                    <img src="../images/512-image5.jpg" alt="" />
+                    <img src="../images/512-image5.jpg" alt="" class="thumbnail"/>
                 </div>
                 <div id="image6" class="tabcontent" style="display: none;">
-                    <img src="../images/512-image6.jpg" alt="" />
+                    <img src="../images/512-image6.jpg" alt="" class="thumbnail"/>
                 </div>
                 <div id="image7" class="tabcontent" style="display: none;">
-                    <img src="../images/512-image7.jpg" alt="" />
+                    <img src="../images/512-image7.jpg" alt="" class="thumbnail"/>
                 </div>
                 <div id="image8" class="tabcontent" style="display: none;">
-                    <img src="../images/512-image8.jpg" alt="" />
+                    <img src="../images/512-image8.jpg" alt="" class="thumbnail"/>
                 </div>
 
             </div>
@@ -307,6 +307,13 @@
 
         </div>
     </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="closeBtn">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" src="">
+    </div>
+
+    <script src="../../js/openImage.js"></script>
 
     <script> // Function for the images
         function openImage(evt, imageNumber) {

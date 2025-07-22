@@ -5,7 +5,7 @@ const thumbnails = document.querySelectorAll('.thumbnail');
 
 thumbnails.forEach(thumbnail => {
   thumbnail.addEventListener('click', () => {
-    lightbox.style.display = 'flex';
+    lightbox.classList.add('show');
     lightboxImg.src = thumbnail.src;
     lightboxImg.alt = thumbnail.alt;
     resetZoom();
@@ -14,15 +14,15 @@ thumbnails.forEach(thumbnail => {
 
 lightbox.addEventListener('click', (e) => {
   if (e.target === lightbox || e.target === closeBtn) {
-    lightbox.style.display = 'none';
+    lightbox.classList.remove('show');
     resetZoom();
   }
 });
 
 // Escape key closes lightbox
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && lightbox.style.display === 'flex') {
-    lightbox.style.display = 'none';
+  if (e.key === 'Escape' && lightbox.classList.contains('show')) {
+    lightbox.classList.remove('show');
     resetZoom();
   }
 });
